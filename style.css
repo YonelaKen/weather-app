@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url(assets/bg.jpg);
+}
+
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.search-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    width: 10%;
+    background: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.description, .wind, .humidity, .temperature{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #000000d0;
+    height: 15px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+.icons{
+    width: 10%;
+}

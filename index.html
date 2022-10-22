@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="assets/js/weatherFetch.js" defer></script>
 </head>
 <body>
     <div class="card">
         <div class="search-card">
-            <input type="text" name="search" id="search-place" placeholder="Johannesburg">
+            <input type="text" name="search" class="search-place" placeholder="Johannesburg">
             <button><img src="assets/search-icon.png" width="100%" alt="search icon"></button>
         </div>
-        <div id="search-result">
+        <div class="search-result loading">
             <h2 class="search-result-place">Weather in Johannesburg:</h2>
-            <div class="temperature"><img class="icons" src="assets/SVG/thermo.svg" alt="Temperature icon" ><h1>36.4</h1></div>
-            <div class="description"><img class="icons" src="./assets/SVG/lightning.svg" alt="Weather icon" ><h4>It is cloudy man</h4></div>
-            <div class="humidity"><img class="icons" src="assets/SVG/humidity.svg" alt="Humidity icon" ><h4>Humidity: 88%</h4></div>
-            <div class="wind"><img class="icons" src="assets/SVG/wind.svg" alt="wind" ><h4>Wind: 36.5km/h</h4></div>
+            <div class="temperature"><img class="icons" src="assets/SVG/thermo.svg" alt="Temperature icon" ><h1 class="temperature-text">36.4 °C</h1></div>
+            <div class="humidity"><img class="icons" src="assets/SVG/humidity.svg" alt="Humidity icon" ><h4 class="humidity-text">Humidity: 88%</h4></div>
+            <div class="wind"><img class="icons" src="assets/SVG/wind.svg" alt="wind" ><h4 class="wind-text">Wind: 36.5km/h</h4></div>
+            <div class="description"><img  id="weather-icon" class="icons" src="./assets/SVG/lightning.svg" alt="Weather icon" ><h4 class="description-text">It is cloudy man</h4></div>
         </div>
     </div>
 </body>

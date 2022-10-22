@@ -57,3 +57,7 @@ input{
 .icons{
     width: 10%;
 }
+
+.search-result.loading{
+    visibility: hidden;
+}
